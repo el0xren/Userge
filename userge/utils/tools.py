@@ -38,7 +38,7 @@ _EMOJI_PATTERN = re.compile(
 _BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\[buttonurl:(?:/{0,2})(.+?)(:same)?\])")
 
 
-# https://github.com/UsergeTeam/Userge-Plugins/blob/master/plugins/tweet.py
+# https://github.com/el0xren/Userge-Plugins/blob/master/plugins/tweet.py
 def demojify(string: str) -> str:
     """ Remove emojis and other non-safe characters from string """
     return re.sub(_EMOJI_PATTERN, '', string)
@@ -79,7 +79,7 @@ def time_formatter(seconds: float) -> str:
     return tmp[:-2]
 
 
-# https://github.com/UsergeTeam/Userge-Plugins/blob/master/plugins/anilist.py
+# https://github.com/el0xren/Userge-Plugins/blob/master/plugins/anilist.py
 def post_to_telegraph(a_title: str, content: str) -> str:
     """ Create a Telegram Post using HTML Content """
     post_client = TelegraphPoster(use_api=True)
